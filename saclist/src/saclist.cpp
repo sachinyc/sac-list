@@ -4,10 +4,10 @@
 // user should be able to create a object of saclist just like std::list<int> l1;
 // insert into list l1.insert(4), l1.delete(5), l1.find(x) -> returns the position of x from begining or end
 // more functionalities like l1.delete_element_at(index), etc etc
-
+#if 0 // We really do not need main here, Added a Test Framework for this 
 int main(int argc, char const *argv[])
 {
-	/*sac::list<int> s1;
+	sac::list<int> s1;
 	
 	s1.insert(10);
 	s1.insert(20);
@@ -23,10 +23,11 @@ int main(int argc, char const *argv[])
 	s1.display();
 
 
-	cout<<s1.get_size()<<endl;*/
+	cout<<s1.get_size()<<endl;
 
 	return 0;
 }
+#endif
 
 template<typename T>
 void sac::list<T>::insert(T element)
