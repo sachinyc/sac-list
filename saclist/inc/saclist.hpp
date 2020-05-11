@@ -1,3 +1,6 @@
+#ifndef __SACLIST_HPP_INCLUDED__
+#define __SACLIST_HPP_INCLUDED__
+
 #include<iostream>
 using namespace std;
 
@@ -40,3 +43,7 @@ namespace sac
 		int get_size();
 	};
 }
+
+#include "saclist-impl.hpp"
+
+#endif
