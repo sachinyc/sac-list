@@ -24,6 +24,7 @@ BOOST_AUTO_TEST_CASE( saclist_insert )
 	// Start Testing
 	sac::list<int> l;
 	std::for_each( v.begin(), v.end(), [&] ( auto &x ) { l.insert(x); } );
+	l.display(); // Yuck
 	
 	// Validate
 	BOOST_CHECK( l.get_size() == In );
@@ -43,6 +44,7 @@ BOOST_AUTO_TEST_CASE( saclist_remove )
 	// Test
 	sac::list<int> l;
 	std::for_each( v.begin(), v.end(), [&] ( auto &x ) { l.insert(x); } );
+	l.display(); // Yuck
 	std::for_each( v.begin(), v.end(), [&] ( auto &x ) { l.remove(x); } );
 
 	// Validate
